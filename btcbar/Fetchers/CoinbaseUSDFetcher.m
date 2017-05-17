@@ -37,8 +37,10 @@
 // Initiates an asyncronous HTTP connection
 - (void)requestUpdate
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://coinbase.com/api/v1/prices/spot_rate"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.coinbase.com/v2/prices/BTC-USD/buy"]];
 
+    // Set the Coinbase API version as HTTP header
+    [request addValue:@"2015-04-08" forHTTPHeaderField:@"CB-VERSION"];
     // Set the request's user agent
     [request addValue:@"btcbar/2.0 (CoinbaseUSDFetcher)" forHTTPHeaderField:@"User-Agent"];
 
@@ -79,7 +81,7 @@
     if(results)
     {
         // Get API status
-        NSString *resultsStatus = [results objectForKey:@"amount"];
+        NSString *resultsStatus = [results valueForKeyPath:@"data.amount"];
 
         // If API call succeeded update the ticker...
         if(resultsStatus)
