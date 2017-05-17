@@ -136,12 +136,12 @@
     if ([[pNotification object] ticker] != nil)
     {
         // Set the menu item of the notifying Fetcher to its latest ticker value
-        [[[btcbarMainMenu itemArray] objectAtIndex:[tickers indexOfObject:[pNotification object]]] setTitle:[NSString stringWithFormat:@"[%@] %@",[[pNotification object] ticker], [[pNotification object] ticker_menu]]];
+        [[[btcbarMainMenu itemArray] objectAtIndex:[tickers indexOfObject:[pNotification object]]] setTitle:[NSString stringWithFormat:@"%@ — %@",[[pNotification object] ticker], [[pNotification object] ticker_menu]]];
     }
     else
     {
         // Set the ticker value in the menu to the short error
-        [[[btcbarMainMenu itemArray] objectAtIndex:[tickers indexOfObject:[pNotification object]]] setTitle:[NSString stringWithFormat:@"[%@] %@",[[pNotification object] error].localizedDescription, [[pNotification object] ticker_menu]]];
+        [[[btcbarMainMenu itemArray] objectAtIndex:[tickers indexOfObject:[pNotification object]]] setTitle:[NSString stringWithFormat:@"%@ — %@",[[pNotification object] error].localizedDescription, [[pNotification object] ticker_menu]]];
     }
 
     // If this notification is for the currently selected ticker, update the status item too
