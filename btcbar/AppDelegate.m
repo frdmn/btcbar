@@ -32,6 +32,7 @@
 //               [[BTCeUSDFetcher alloc] init],
                 [[CoinbaseETHFetcher alloc] init],
                 [[CoinbaseUSDFetcher alloc] init],
+                [[KrakenXLMFetcher alloc] init],
 //               [[HuobiUSDFetcher alloc] init],
 //               [[OKCoinUSDFetcher alloc] init],
 //               [[WinkDexUSDFetcher alloc] init],

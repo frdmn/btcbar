@@ -23,6 +23,7 @@
 		B662833B1A712EBB00520512 /* BitFinexUSDFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B662833A1A712EBB00520512 /* BitFinexUSDFetcher.m */; };
 		B662833E1A715EFB00520512 /* WinkDexUSDFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B662833D1A715EFB00520512 /* WinkDexUSDFetcher.m */; };
 		DD4B99A61ECD8E7D00DA8E66 /* CoinbaseETHFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4B99A51ECD8E7D00DA8E66 /* CoinbaseETHFetcher.m */; };
+		DD4B99A91ECD8FBF00DA8E66 /* KrakenXLMFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4B99A81ECD8FBF00DA8E66 /* KrakenXLMFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		B662833D1A715EFB00520512 /* WinkDexUSDFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WinkDexUSDFetcher.m; path = Fetchers/WinkDexUSDFetcher.m; sourceTree = "<group>"; };
 		DD4B99A41ECD8E7D00DA8E66 /* CoinbaseETHFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoinbaseETHFetcher.h; path = Fetchers/CoinbaseETHFetcher.h; sourceTree = "<group>"; };
 		DD4B99A51ECD8E7D00DA8E66 /* CoinbaseETHFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoinbaseETHFetcher.m; path = Fetchers/CoinbaseETHFetcher.m; sourceTree = "<group>"; };
+		DD4B99A71ECD8FBF00DA8E66 /* KrakenXLMFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KrakenXLMFetcher.h; path = Fetchers/KrakenXLMFetcher.h; sourceTree = "<group>"; };
+		DD4B99A81ECD8FBF00DA8E66 /* KrakenXLMFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KrakenXLMFetcher.m; path = Fetchers/KrakenXLMFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				83C3E7461859700100FA2921 /* CoinbaseUSDFetcher.m */,
 				DD4B99A41ECD8E7D00DA8E66 /* CoinbaseETHFetcher.h */,
 				DD4B99A51ECD8E7D00DA8E66 /* CoinbaseETHFetcher.m */,
+				DD4B99A71ECD8FBF00DA8E66 /* KrakenXLMFetcher.h */,
+				DD4B99A81ECD8FBF00DA8E66 /* KrakenXLMFetcher.m */,
 				90347B7718ACB073005C42A8 /* HuobiUSDFetcher.h */,
 				90347B7818ACB073005C42A8 /* HuobiUSDFetcher.m */,
 			);
@@ -242,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4B99A91ECD8FBF00DA8E66 /* KrakenXLMFetcher.m in Sources */,
 				83C3E7491859700100FA2921 /* BitStampUSDFetcher.m in Sources */,
 				B662833B1A712EBB00520512 /* BitFinexUSDFetcher.m in Sources */,
 				830CE09D171B6C3E00DDD525 /* main.m in Sources */,

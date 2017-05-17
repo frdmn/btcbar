@@ -8,6 +8,7 @@
 #import "BitStampUSDFetcher.h"
 #import "CoinbaseETHFetcher.h"
 #import "CoinbaseUSDFetcher.h"
+#import "KrakenXLMFetcher.h"
 #import "BTCeUSDFetcher.h"
 #import "BitFinexUSDFetcher.h"
 #import "WinkDexUSDFetcher.h"
