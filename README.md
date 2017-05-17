@@ -13,19 +13,14 @@ And how you can select a ticker:
 
 ![Menu Screenshot](https://raw.github.com/frdmn/cryptobar/master/Resources/screenshot2.png)
 
-## Installation
-
-Simply place cryptobar.app in your `/Applications` folder, and optionally add it to `Login Items` in `System Preferences > Users & Groups` to display it automatically on startup.
-
-## Download
-
-The current version of cryptobar (2.3.1) can be downloaded here:
-
-https://github.com/frdmn/cryptobar/releases/download/v2.3.1/cryptobar_2_3_1.zip
-
-It requires OS X 10.7+ and a 64-bit processor.
-
 ## Changelog
+
+### 2.4.0
+
+* Clarify that this is a customized and personal fork
+* Rename project (because of obvious reasons :point_up:) 
+* Add Ethereum (Coinbase) and Stellar Lumens (Kraken) tracker
+* Remove unused trackers
 
 ### 2.3.1
 
