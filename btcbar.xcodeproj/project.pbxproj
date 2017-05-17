@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		830CE08D171B6C3E00DDD525 /* btcbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btcbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830CE08D171B6C3E00DDD525 /* cryptobar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptobar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830CE090171B6C3E00DDD525 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		830CE093171B6C3E00DDD525 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		830CE094171B6C3E00DDD525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -88,7 +88,7 @@
 		830CE08E171B6C3E00DDD525 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				830CE08D171B6C3E00DDD525 /* btcbar.app */,
+				830CE08D171B6C3E00DDD525 /* cryptobar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			);
 			name = btcbar;
 			productName = btcbar;
-			productReference = 830CE08D171B6C3E00DDD525 /* btcbar.app */;
+			productReference = 830CE08D171B6C3E00DDD525 /* cryptobar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -357,8 +357,8 @@
 				GCC_PREFIX_HEADER = "btcbar/btcbar-Prefix.pch";
 				INFOPLIST_FILE = "btcbar/btcbar-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nearengine.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mn.frd.cryptobar;
+				PRODUCT_NAME = cryptobar;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,8 +371,8 @@
 				GCC_PREFIX_HEADER = "btcbar/btcbar-Prefix.pch";
 				INFOPLIST_FILE = "btcbar/btcbar-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nearengine.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mn.frd.cryptobar;
+				PRODUCT_NAME = cryptobar;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

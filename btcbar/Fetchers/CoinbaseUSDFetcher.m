@@ -76,7 +76,7 @@
     NSError *jsonParsingError = nil;
     NSDictionary *results = [[NSDictionary alloc] init];
     results = [NSJSONSerialization JSONObjectWithData:self.responseData options:0 error:&jsonParsingError];
-    
+
     // Results parsed successfully from JSON
     if(results)
     {
@@ -95,14 +95,14 @@
         // Otherwise log an error...
         else
         {
-            self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"API Error", NSLocalizedDescriptionKey, @"The JSON received did not contain a result or the API returned an error.", NSLocalizedFailureReasonErrorKey, nil]];
+            self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"API Error", NSLocalizedDescriptionKey, @"The JSON received did not contain a result or the API returned an error.", NSLocalizedFailureReasonErrorKey, nil]];
             self.ticker = nil;
         }
     }
     // JSON parsing failed
     else
     {
-        self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"JSON Error", NSLocalizedDescriptionKey, @"Could not parse the JSON returned.", NSLocalizedFailureReasonErrorKey, nil]];
+        self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"JSON Error", NSLocalizedDescriptionKey, @"Could not parse the JSON returned.", NSLocalizedFailureReasonErrorKey, nil]];
         self.ticker = nil;
     }
 }
@@ -110,7 +110,7 @@
 // HTTP request failed
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"Connection Error", NSLocalizedDescriptionKey, @"Could not connect to Coinbase.", NSLocalizedFailureReasonErrorKey, nil]];
+    self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"Connection Error", NSLocalizedDescriptionKey, @"Could not connect to Coinbase.", NSLocalizedFailureReasonErrorKey, nil]];
     self.ticker = nil;
 }
 

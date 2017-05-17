@@ -1,27 +1,27 @@
-btcbar
-======
+cryptobar
+=========
 
-A tiny status bar widget for OS X that displays the latest USD/BTC spot price from several exchanges.
+A tiny status bar widget for macOS which displays my favourite crypto currency buy prices from various exchanges.
 
 ## Screenshot
 
-Here is how btcbar looks in your status bar:
+Here is how cryptobar looks in your status bar:
 
-![Screenshot](https://raw.github.com/nearengine/btcbar/master/Resources/screenshot.png)
+![Screenshot](https://raw.github.com/frdmn/cryptobar/master/Resources/screenshot.png)
 
 And how you can select a ticker:
 
-![Menu Screenshot](https://raw.github.com/nearengine/btcbar/master/Resources/screenshot2.png)
+![Menu Screenshot](https://raw.github.com/frdmn/cryptobar/master/Resources/screenshot2.png)
 
 ## Installation
 
-Simply place btcbar.app in your `/Applications` folder, and optionally add it to `Login Items` in `System Preferences > Users & Groups` to display it automatically on startup.
+Simply place cryptobar.app in your `/Applications` folder, and optionally add it to `Login Items` in `System Preferences > Users & Groups` to display it automatically on startup.
 
 ## Download
 
-The current version of btcbar (2.3.1) can be downloaded here:
+The current version of cryptobar (2.3.1) can be downloaded here:
 
-https://github.com/nearengine/btcbar/releases/download/v2.3.1/btcbar_2_3_1.zip
+https://github.com/frdmn/cryptobar/releases/download/v2.3.1/cryptobar_2_3_1.zip
 
 It requires OS X 10.7+ and a 64-bit processor.
 

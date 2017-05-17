@@ -74,7 +74,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSString *responseStr = [[NSString alloc] initWithData:self.responseData encoding:NSUTF8StringEncoding];
-    
+
     if (!responseStr) {
         return;
     }
@@ -91,21 +91,21 @@
             NSNumberFormatter *currencyStyle = [[NSNumberFormatter alloc] init];
             currencyStyle.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
             currencyStyle.numberStyle = NSNumberFormatterCurrencyStyle;
-            
+
             self.error = nil;
             self.ticker = [currencyStyle stringFromNumber:ticker];
         }
         // Otherwise log an error...
         else
         {
-            self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"API Error", NSLocalizedDescriptionKey, @"The JSON received did not contain a result or the API returned an error.", NSLocalizedFailureReasonErrorKey, nil]];
+            self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"API Error", NSLocalizedDescriptionKey, @"The JSON received did not contain a result or the API returned an error.", NSLocalizedFailureReasonErrorKey, nil]];
             self.ticker = nil;
         }
     }
     // JSON parsing failed
     else
     {
-        self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"JSON Error", NSLocalizedDescriptionKey, @"Could not parse the JSON returned.", NSLocalizedFailureReasonErrorKey, nil]];
+        self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"JSON Error", NSLocalizedDescriptionKey, @"Could not parse the JSON returned.", NSLocalizedFailureReasonErrorKey, nil]];
         self.ticker = nil;
     }
 }
@@ -113,7 +113,7 @@
 // HTTP request failed
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
-    self.error = [NSError errorWithDomain:@"com.nearengine.btcbar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"Connection Error", NSLocalizedDescriptionKey, @"Could not connect to Huobi.", NSLocalizedFailureReasonErrorKey, nil]];
+    self.error = [NSError errorWithDomain:@"mn.frd.cryptobar" code:0 userInfo:[NSDictionary dictionaryWithObjectsAndKeys: @"Connection Error", NSLocalizedDescriptionKey, @"Could not connect to Huobi.", NSLocalizedFailureReasonErrorKey, nil]];
     self.ticker = nil;
 }
 
