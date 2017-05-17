@@ -99,3 +99,7 @@ The source is provided for inspection, considering the nature of Bitcoin. You ar
 If for some reason you feel like donating a few micro btc to future development, those should go here:
 
 `1D3NtjVFpoXonqk3MZwsYD9iV5WA7MRXUj`
+
+## Credits
+
+* @[chrisshiplet](https://github.com/chrisshiplet/) for [the original work on **btcbar**](https://github.com/chrisshiplet/btcbar)
