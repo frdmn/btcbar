@@ -30,7 +30,8 @@
 //               [[BitFinexUSDFetcher alloc] init],
 //               [[BitStampUSDFetcher alloc] init],
 //               [[BTCeUSDFetcher alloc] init],
-               [[CoinbaseUSDFetcher alloc] init],
+                [[CoinbaseETHFetcher alloc] init],
+                [[CoinbaseUSDFetcher alloc] init],
 //               [[HuobiUSDFetcher alloc] init],
 //               [[OKCoinUSDFetcher alloc] init],
 //               [[WinkDexUSDFetcher alloc] init],
@@ -40,7 +41,7 @@
     if (![prefs integerForKey:@"btcbar_ticker_index"])
         [prefs setInteger:0 forKey:@"btcbar_ticker_index"];
     currentFetcherTag = [prefs integerForKey:@"btcbar_ticker_index"];
-    
+
     // Clean up legacy preference
     [prefs removeObjectForKey:@"btcbar_ticker"];
 

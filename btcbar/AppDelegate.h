@@ -6,6 +6,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "BitStampUSDFetcher.h"
+#import "CoinbaseETHFetcher.h"
 #import "CoinbaseUSDFetcher.h"
 #import "BTCeUSDFetcher.h"
 #import "BitFinexUSDFetcher.h"
