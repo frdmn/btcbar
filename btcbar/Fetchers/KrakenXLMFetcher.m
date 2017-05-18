@@ -12,7 +12,7 @@
     if (self = [super init])
     {
         // Menu Item Name
-        self.ticker_menu = @"Kraken (Lumens/USD)";
+        self.ticker_menu = @"Lumens/USD (Kraken)";
 
         // Website location
         self.url = @"https://www.kraken.com/";

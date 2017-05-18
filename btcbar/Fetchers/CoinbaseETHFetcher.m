@@ -12,7 +12,7 @@
     if (self = [super init])
     {
         // Menu Item Name
-        self.ticker_menu = @"Coinbase (ETH/USD)";
+        self.ticker_menu = @"ETH/USD (Coinbase)";
 
         // Website location
         self.url = @"https://coinbase.com/";
