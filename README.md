@@ -15,6 +15,11 @@ And how you can select a ticker:
 
 ## Changelog
 
+### 2.4.1
+
+* Update screenshots
+* Improve description of trackers
+
 ### 2.4.0
 
 * Clarify that this is a customized and personal fork
