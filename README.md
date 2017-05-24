@@ -15,6 +15,10 @@ And how you can select a ticker:
 
 ## Changelog
 
+### 2.4.2
+
+* Add USD/STR Poloniex fetcher
+
 ### 2.4.1
 
 * Update screenshots
