@@ -33,6 +33,7 @@
                 [[CoinbaseETHFetcher alloc] init],
                 [[CoinbaseUSDFetcher alloc] init],
                 [[KrakenXLMFetcher alloc] init],
+                [[PoloniexXLMFetcher alloc] init],
 //               [[HuobiUSDFetcher alloc] init],
 //               [[OKCoinUSDFetcher alloc] init],
 //               [[WinkDexUSDFetcher alloc] init],

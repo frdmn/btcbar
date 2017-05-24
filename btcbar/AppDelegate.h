@@ -9,6 +9,7 @@
 #import "CoinbaseETHFetcher.h"
 #import "CoinbaseUSDFetcher.h"
 #import "KrakenXLMFetcher.h"
+#import "PoloniexXLMFetcher.h"
 #import "BTCeUSDFetcher.h"
 #import "BitFinexUSDFetcher.h"
 #import "WinkDexUSDFetcher.h"
